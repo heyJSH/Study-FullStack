@@ -52,224 +52,8 @@
 
 <body>
   <header>
-    <div class="inner">
-      <!-- 로고 이미지 부분 -->
-      <a href="./index.jsp" class="logo">
-        <img src="./images/starbucks_logo.png" alt="starbucks_logo" />
-      </a>
-
-      <!-- 위에 있는 서브 메뉴 부분 -->
-      <div class="sub-menu">
-        <ul class="menu">
-          <li>
-            <a href="#">Sign In</a>
-          </li>
-          <li>
-            <a href="#">My Starbucks</a>
-          </li>
-          <li>
-            <a href="#">Customer & Service & Ideas</a>
-          </li>
-          <li>
-            <a href="#">Find a Store</a>
-          </li>
-        </ul>
-        <div class="search">
-          <input type="text" />
-          <span class="material-symbols-outlined">Search</span>
-        </div>
-      </div>
-
-      <!-- 밑에 있는 메인 메뉴 부분 -->
-      <ul class="main-menu">
-        <li class="item">
-          <div class="item__name">COFFEE</div>
-          <div class="item__contents">
-            <div class="contents__menu">
-              <ul class="inner">
-                <li>
-                  <h4>커피</h4>
-                  <ul>
-                    <li>스타벅스 원두</li>
-                    <li>스타벅스 비아</li>
-                    <li>스타벅스 오리가미</li>
-                  </ul>
-                </li>
-                <li>
-                  <h4>에스프레소 음료</h4>
-                  <ul>
-                    <li>도피오</li>
-                    <li>에스프레소 마키아또</li>
-                    <li>아메리카노</li>
-                    <li>마키아또</li>
-                    <li>카푸치노</li>
-                    <li>라떼</li>
-                    <li>모카</li>
-                    <li>리스트레또 비안코</li>
-                  </ul>
-                </li>
-                <li>
-                  <h4>커피 이야기</h4>
-                  <ul>
-                    <li>스타벅스 로스트 스팩트럼</li>
-                    <li>최상의 아라비카 원두</li>
-                    <li>한 잔의 커피가 완성되기까지</li>
-                    <li>클로버® 커피 추출 시스템</li>
-                  </ul>
-                </li>
-                <li>
-                  <h4>최상의 커피를 즐기는 법</h4>
-                  <ul>
-                    <li>커피 프레스</li>
-                    <li>푸어 오버</li>
-                    <li>아이스 푸어 오버</li>
-                    <li>커피 메이커</li>
-                    <li>리저브를 매장에서 다양하게 즐기는 법</li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-            <div class="contents__texture">
-              <div class="inner">
-                <h4>나와 어울리는 커피 찾기</h4>
-                <p>스타벅스가 여러분에게 어울리는 커피를 찾아드립니다.</p>
-                <h4>최상의 커피를 즐기는 법</h4>
-                <p>여러가지 방법을 통해 다양한 풍미의 커피를 즐겨보세요.</p>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li class="item">
-          <div class="item__name">MENU</div>
-          <div class="item__contents">
-            <div class="contents__menu">
-              <ul class="inner">
-                <li>
-                  <h4>음료</h4>
-                  <ul>
-                    <li>콜드 브루</li>
-                    <li>브루드 커피</li>
-                    <li>에스프레소</li>
-                    <li>프라푸치노</li>
-                    <li>블렌디드 음료</li>
-                    <li>스타벅스 피지오</li>
-                    <li>티(티바나)</li>
-                    <li>기타 제조 음료</li>
-                    <li>스타벅스 주스(병음료)</li>
-                  </ul>
-                </li>
-                <li>
-                  <h4>푸드</h4>
-                  <ul>
-                    <li>베이커리</li>
-                    <li>케익</li>
-                    <li>샌드위치 & 샐러드</li>
-                    <li>따뜻한 푸드</li>
-                    <li>과일 & 요거트</li>
-                    <li>스낵 & 미니 디저트</li>
-                    <li>아이스크림</li>
-                  </ul>
-                </li>
-                <li>
-                  <h4>상품</h4>
-                  <ul>
-                    <li>머그</li>
-                    <li>글라스</li>
-                    <li>플라스틱 텀블러</li>
-                    <li>스테인리스 텀블러</li>
-                    <li>보온병</li>
-                    <li>액세서리</li>
-                    <li>커피 용품</li>
-                    <li>패키지 티(티바나)</li>
-                  </ul>
-                </li>
-                <li>
-                  <h4>카드</h4>
-                  <ul>
-                    <li>실물카드</li>
-                    <li>e-Gift 카드</li>
-                  </ul>
-                </li>
-                <li>
-                  <h4>메뉴 이야기</h4>
-                  <ul>
-                    <li>콜드 브루</li>
-                    <li>스타벅스 티바나</li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-            <div class="contents__texture">
-              <div class="inner">
-                <h4>스타벅스 티바나</h4>
-                <p>다양한 찻잎과 향신료 등 개성있는 재료로 새로운 맛과 향의 티를 선보입니다.</p>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li class="item">
-          <div class="item__name">STORE</div>
-          <div class="item__contents">
-            <div class="contents__menu">
-              <ul class="inner">
-                <li>
-                  <h4>매장 찾기</h4>
-                  <ul>
-                    <li>퀵 검색</li>
-                    <li>지역 검색</li>
-                    <li>My 매장</li>
-                  </ul>
-                </li>
-                <li>
-                  <h4>매장 이야기</h4>
-                  <ul>
-                    <li>청담스타</li>
-                    <li>티바나 인스파이어드 매장</li>
-                    <li>파미에파크</li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-            <div class="contents__texture">
-              
-            </div>
-          </div>
-        </li>
-        <li class="item">
-          <div class="item__name">RESPONSIBILITY</div>
-          <div class="item__contents">
-            <div class="contents__menu">
-
-            </div>
-            <div class="contents__texture">
-              
-            </div>
-          </div>
-        </li>
-        <li class="item">
-          <div class="item__name">MY STARBUCKS REWARDS</div>
-          <div class="item__contents">
-            <div class="contents__menu">
-
-            </div>
-            <div class="contents__texture">
-              
-            </div>
-          </div>
-        </li>
-        <li class="item">
-          <div class="item__name">WHAT'S NEW</div>
-          <div class="item__contents">
-            <div class="contents__menu">
-
-            </div>
-            <div class="contents__texture">
-              
-            </div>
-          </div>
-        </li>
-      </ul>
-    </div>
+  	<!-- 헤더 영역 공통 부분 -->
+  	<%@ include file ="header.jsp" %>
 
     <!-- badges -->
     <div class="badges">
@@ -303,7 +87,7 @@
     </div>
   </section>
 
-  <!-- notice -->
+  <!-- notice (공지사항) -->
   <section class="notice">
     <!-- notice line -->
     <div class="notice-line">
@@ -321,8 +105,8 @@
 	String PASSWORD = "123456";
 	
 	Connection conn = null;		// 디비 접속 성공시 접속 정보 저장
-	Statement stmt = null;			// 쿼리를 실행하는 객체 정보
-	ResultSet rs = null;			// 
+	Statement stmt = null;		// 쿼리를 실행하는 객체 정보
+	ResultSet rs = null;			
 	
 	Exception exception = null;
 	
@@ -334,26 +118,23 @@
 		// 2. BO_FREE 테이블에서 SQL로 데이터 가져오기
 		stmt = conn.createStatement();	// 2-1. Statement 생성
 		// rs = stmt.executeQuery("SELECT * FROM BO_FREE");	// 2-2. SQL 쿼리 실행
-		rs = stmt.executeQuery("SELECT NUM, SUBJECT, HIT, REGDATE FROM BO_FREE ORDER BY NUM DESC");	// *보다 필요한 값을 직접 입력하는 것이 더 좋음
+		rs = stmt.executeQuery("SELECT ROWNUM, T.SUBJECT FROM (SELECT * FROM BO_FREE bf ORDER BY NUM DESC) T WHERE ROWNUM <=3");	// *보다 필요한 값을 직접 입력하는 것이 더 좋음
 		
 		// 3. rs로 데이터 가져온 걸 웹에 보여주기 => 쿼리 실행 결과 출력
 		while(rs.next()) {
+%>
+						<div class="swiper-slide">
+<!--                 <a href="javascript:void(0)">[당첨자 발표] 뉴이어 전자영수증 이벤트</a> -->
+             	<a href="javascript:void(0)"><%= rs.getString("SUBJECT") %></a>
+             </div>
+<%
 			
 		}
 	} catch(Exception e) {
 	  	System.out.println("오라클 접속 오류:" + e);
   }
 %>            
-              <div class="swiper-slide">
-<!--                 <a href="javascript:void(0)">[당첨자 발표] 뉴이어 전자영수증 이벤트</a> -->
-              	<a href="javascript:void(0)"></a>
-              </div>
-              <div class="swiper-slide">
-<!--                 <a href="javascript:void(0)">크리스마스 이벤트 발표</a> -->
-              </div>
-              <div class="swiper-slide">
-<!--                 <a href="javascript:void(0)">스타벅스 맛있어요~~~</a> -->
-              </div>
+              
             </div>
           </div>
           <a href="./notice.jsp" class="notice-line__more">
