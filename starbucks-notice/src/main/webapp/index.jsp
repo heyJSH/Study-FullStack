@@ -125,7 +125,7 @@
 %>
 						<div class="swiper-slide">
 <!--                 <a href="javascript:void(0)">[당첨자 발표] 뉴이어 전자영수증 이벤트</a> -->
-             	<a href="javascript:void(0)"><%= rs.getString("SUBJECT") %></a>
+             	<a href="./notice-detail.jsp"><%= rs.getString("SUBJECT") %></a>
              </div>
 <%
 			
