@@ -45,9 +45,9 @@
  				<span>Welcome!</span>
  				<p>스타벅스 코리아에 오신 것을 환영합니다.</p>
  			</div>
-	 		<form class="login-form">
-	 			<input type="text" id="userId" name="userId" placeholder="아이디를 입력해 주세요.">
-	 			<input type="text" id="userPw" name="userPw" placeholder="비밀번호를 입력해 주세요.">
+	 		<form class="login-form" action="./login.jsp">
+	 			<input type="text" id="userId" name="userId" placeholder="아이디를 입력해 주세요." required>
+	 			<input type="text" id="userPw" name="userPw" placeholder="비밀번호를 입력해 주세요." required>
 	 			<div class="save-Information">
 	 				<ul class="save">
 	 					<li>체크</li>

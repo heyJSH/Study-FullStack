@@ -1,6 +1,7 @@
 package vo;
 
 public class BoVo {
+	private int num;
 	private String id;
 	private String pw;
 	private String name;
@@ -9,7 +10,15 @@ public class BoVo {
 	private String hompy;
 	private String subject;
 	private String content;
+	private int hit;
+	private String regdate;
 	
+	public int getNum() {
+		return num;
+	}
+	public void setNum(int num) {
+		this.num = num;
+	}
 	public String getId() {
 		return id;
 	}
@@ -58,4 +67,18 @@ public class BoVo {
 	public void setContent(String content) {
 		this.content = content;
 	}
+	public int getHit() {
+		return hit;
+	}
+	public void setHit(int hit) {
+		this.hit = hit;
+	}
+	public String getRegdate() {
+		return regdate;
+	}
+	public void setRegdate(String regdate) {
+		this.regdate = regdate;
+	}
+	
+	
 }
