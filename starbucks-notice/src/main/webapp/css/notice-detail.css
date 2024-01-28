@@ -1,0 +1,117 @@
+@charset "UTF-8";
+
+/* 공지사항 내용 (notice-detail.jsp) */
+.notice_det_wrap .notice_det_inner ul.nmap {
+	/* background-color: orange; */
+	height: 62px;
+	display: flex;
+	align-items: center;
+  justify-content: space-between;
+  margin-top: 1%;
+  /* margin-bottom: 2%; */
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.notice_det_wrap .notice_det_inner ul.nmap li {
+	margin: 0px 2%;
+	
+}
+
+.notice_det_wrap .notice_det_inner ul.nmap li.det__title {
+	font-size: 18px;
+	font-weight: 900;
+	
+}
+
+.notice_det_wrap .notice__contents {
+	/* background-color: orange; */
+	border-bottom: 1px solid rgb(221,221,221);
+}
+
+.notice_det_wrap .notice_det_inner ul.nmap li.notice__contents {
+	padding: 40px 20px;
+}
+
+
+/* 페이스북 아이콘 */
+/* 참고 => https://www.w3schools.com/howto/howto_css_social_media_buttons.asp */
+.fa {
+	padding: 10px;
+  font-size: 15px;
+  width: 8px;
+  height: 10px;
+  border-radius: 50%;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Set a specific color for each brand */
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+
+/* bottom */
+.bottom {
+	/* background-color: orange; */
+	display: flex;
+	justify-content: flex-end;
+	width: 100%;
+	margin: 20px 0px;
+	margin-bottom: 40px;
+}
+
+/* 목록 버튼 */
+.bottom input {
+	color: #fff;
+	background-color: rgb(102,102,102);
+	font-size: 15px;
+	font-weight: 900;
+	padding: 15px 30px;
+	border-radius: 3px;
+	border: none;
+	box-shadow: none;
+}
+
+.bottom input:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+/* 윗글 & 아랫글 */
+.notice_det_list {
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	font-size: 13px;
+	/* align-items: center; */
+}
+
+.notice_det_list .prev,
+.notice_det_list .next {
+	display: flex;
+	align-items: center;
+}
+
+.notice_det_list .prev {
+	border-bottom: 1px solid rgb(221,221,221);
+}
+
+.notice_det_list h3 {
+	width: 15%;
+	padding: 15px 0 15px 15px;
+	background-color: rgb(244,244,242);
+	font-weight: 700;
+}
+
+.notice_det_list p {
+	color: rgb(102,102,102);
+	padding-left: 2%;
+}
+
+.notice_det_list p:hover {
+	text-decoration: underline;
+	/* cursor: pointer; */
+}

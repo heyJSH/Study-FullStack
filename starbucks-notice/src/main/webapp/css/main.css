@@ -347,12 +347,6 @@ header .badges .badge {
   position: relative;
 }
 
-/* 마우스 올리면 밑줄 */
-.en:hover,
-.this:hover {
-	text-decoration: underline;
-}
-
 .notice .notice-line .bg-left {
   background-color: #592B18;
   width: 50%;
@@ -692,7 +686,6 @@ header .badges .badge {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	font-size: 13px;
 }
 .notice__list .notice__list__itmes ul li:nth-child(2) {
 	width: 76%;
@@ -704,78 +697,10 @@ header .badges .badge {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	font-size: 13px;
 }
 .notice__list .notice__list__itmes ul li:nth-child(4) {
 	width: 12%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	font-size: 13px;
-}
-
-/* 공지사항 내용 (notice-detail.jsp) */
-.notice_det_wrap {
-	/* background-color: orange; */
-	border-bottom: 1px solid rgb(221,221,221);
-}
-
-.notice_det_wrap .notice_det_inner {}
-
-.notice_det_wrap .notice_det_inner ul.nmap {
-	/* background-color: gray; */
-	height: 62px;
-	display: flex;
-	align-items: center;
-  justify-content: space-between;
-  margin-top: 1%;
-  /* margin-bottom: 2%; */
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
-}
-
-.notice_det_wrap .notice_det_inner ul.nmap li {
-	margin: 0px 2%;
-}
-
-.notice_det_wrap .notice_det_inner ul.nmap li.det__title {
-	font-weight: bold;
-}
-
-.notice_det_wrap .notice_det_inner ul.nmap li a {}
-
-
-/* 페이스북 아이콘 */
-/* 참고 => https://www.w3schools.com/howto/howto_css_social_media_buttons.asp */
-.fa {
-	padding: 10px;
-  font-size: 15px;
-  width: 8px;
-  height: 10px;
-  border-radius: 50%;
-  text-align: center;
-  text-decoration: none;
-}
-
-/* Set a specific color for each brand */
-/* Facebook */
-.fa-facebook {
-  background: #3B5998;
-  color: white;
-}
-
-.notice_det_wrap .notice__contents p {
-	background-color: lightgray;
-	margin: 0px 1%;
-	font-size: 13px;
-	align-items: center;
-	padding: 4% 0px;
-}
-
-/* 목록 버튼 */
-.btn--list {
-	
-}
-
-.inner.btn--li {
 }

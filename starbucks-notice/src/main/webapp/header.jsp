@@ -51,7 +51,7 @@
 </head>
 
 <body>
-  <!-- <header> -->
+  <header>
     <div class="inner">
       <!-- 로고 이미지 부분 -->
       <a href="./index.jsp" class="logo">
@@ -62,7 +62,7 @@
       <div class="sub-menu">
         <ul class="menu">
           <li>
-            <a href="#">Sign In</a>
+            <a href="./loginForm.jsp">Sign In</a>
           </li>
           <li>
             <a href="#">My Starbucks</a>
@@ -380,6 +380,6 @@
         </li>
       </ul>
     </div>
-	<!-- </header> -->
+	</header>
 </body>
 </html>

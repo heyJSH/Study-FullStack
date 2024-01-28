@@ -27,6 +27,7 @@
 
   <link rel="stylesheet" href="./css/main.css" />
   <link rel="stylesheet" href="./css/notice.css" />
+  <link rel="stylesheet" href="./css/notice-detail.css" />
   
   <script defer src="./js/jquery-3.7.1.min.js"></script>
   <!-- lodash -->
@@ -46,10 +47,8 @@
 </head>
 
 <body>
-	<header>
-		<!-- 헤더 영역 공통 부분 -->
-  	<%@ include file ="header.jsp" %>
-	</header>
+	<!-- 헤더 영역 공통 부분 -->
+ 	<%@ include file ="header.jsp" %>
 	
 	<!-- notice top -->
 	<section>
@@ -81,20 +80,24 @@
 			<div class="notice__contents">
 				<p>안녕하세요. 스타벅스 코리아입니다. 보다 나은 서비스 제공을 위한 시스템 점검을 진행합니다.</p>
 			</div>
+			<!-- 목록 버튼 -->
+			<div class="bottom">
+			<input type="button" value="목록" onclick="location.href='notice.jsp'">
+		</div>
+		<!-- 윗글 & 아랫글 -->
+		<div class="notice_det_list">
+			<div class="prev">
+				<h3>윗글</h3>
+				<p>해당글이 없습니다.</p>
+			</div>
+			<div class="next">
+				<h3>아랫글</h3>
+				<p>시스템 개선 및 서비스 점검 안내</p>
+			</div>
+		</div>
 		</div>
 	</section>
-	
-	<!-- 목록 버튼 -->
-	<section>
-		<div class="inner btn--list">
-			<a href="./notice.jsp" class="btn--li">목록</a>
-		</div>
-	</section>
-	
-	<!-- 윗글 & 아랫글 -->
-	<section>
-		<div class=""></div>
-	</section>
+
 	
 </body>
 </html>

@@ -43,10 +43,8 @@
 </head>
 
 <body>
-  <header>
-    <!-- 헤더 영역 공통 부분 -->
-  	<%@ include file ="header.jsp" %>
-  </header>
+   <!-- 헤더 영역 공통 부분 -->
+ 	<%@ include file ="header.jsp" %>
   
   <!-- notice top -->
   <section>
@@ -109,22 +107,21 @@
 			
 		// 날짜를 yyyy-mm-dd로 맞추기 위해 substring 함수 사용
 %>
-<ul>
-	<li><%= rs.getInt("NUM") %></li>
-	<li><%= rs.getString("SUBJECT") %></li>
-	<li><%= rs.getInt("HIT") %></li>
-	<li><%= rs.getString("REGDATE").substring(0, 10) %></li>
-</ul>
+				<ul>
+					<li><%= rs.getInt("NUM") %></li>
+					<li><%= rs.getString("SUBJECT") %></li>
+					<li><%= rs.getInt("HIT") %></li>
+					<li><%= rs.getString("REGDATE").substring(0, 10) %></li>
+				</ul>
+			
 <% 		 		
 	 	}
   } catch(Exception e) {
 	  	System.out.println("오라클 접속 오류:" + e);
   }
 %>
-
-	  	</div>
-	  
-	  </div>
+			</div>
+		</div>
   </section>
   
 </body>
