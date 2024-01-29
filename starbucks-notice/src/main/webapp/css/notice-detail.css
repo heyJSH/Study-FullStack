@@ -25,7 +25,7 @@
 }
 
 .notice_det_wrap .notice__contents {
-	/* background-color: orange; */
+	background-color: orange;
 	border-bottom: 1px solid rgb(221,221,221);
 }
 

@@ -109,15 +109,23 @@
 %>
 				<ul>
 					<li><%= rs.getInt("NUM") %></li>
-					<li><%= rs.getString("SUBJECT") %></li>
+					<li>
+						<a href="./notice-detail.jsp?num=<%= rs.getInt("NUM") %>">
+							<%= rs.getString("SUBJECT") %>
+						</a>
+					</li>
 					<li><%= rs.getInt("HIT") %></li>
 					<li><%= rs.getString("REGDATE").substring(0, 10) %></li>
 				</ul>
 			
-<% 		 		
+<%		 		
 	 	}
   } catch(Exception e) {
 	  	System.out.println("오라클 접속 오류:" + e);
+  } finally {
+	  if (rs != null) try { rs.close(); } catch (SQLException ex) {}
+	  if (stmt != null) try { stmt.close(); } catch (SQLException ex) {}
+	  if (conn != null) try { conn.close(); } catch (SQLException ex) {}
   }
 %>
 			</div>
