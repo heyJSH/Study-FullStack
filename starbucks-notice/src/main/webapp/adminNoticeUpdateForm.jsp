@@ -32,6 +32,8 @@
 	String name = "";
 	String title = "";
 	String content = "";
+	String fileName1 = "";
+	String fileName2 = "";
 	
   try {
 	  // 0.
@@ -43,12 +45,14 @@
 	  
 		// 2. BO_FREE 테이블에서 SQL로 데이터 가져오기
 	 	stmt = conn.createStatement();	// 2-1. Statement 생성
-	 	rs = stmt.executeQuery("SELECT NUM, NAME, SUBJECT, CONTENT FROM BO_FREE WHERE NUM = " + num); // 2-2. SQL 쿼리 실행
+	 	rs = stmt.executeQuery("SELECT NUM, NAME, SUBJECT, CONTENT, FILE1_PATH, FILE2_PATH FROM BO_FREE WHERE NUM = " + num); // 2-2. SQL 쿼리 실행
 	 	
 	 	if (rs.next()) {
 	 		name = rs.getString("NAME");
 	 		title = rs.getString("SUBJECT");
 	 		content = rs.getString("CONTENT");
+	 		fileName1 = rs.getString("FILE1_PATH");
+	 		fileName2 = rs.getString("FILE2_PATH");
 	 	}
   } catch(Exception e) {
 	  System.out.println("오라클 접속 오류: " + e);
@@ -62,7 +66,7 @@
         <div class="card-header1">
             <h1><a href="./adminNoticeList.jsp">스타벅스 공지사항 글 수정</a></h1>
         </div>
-        <form action="./adminNoticeUpdate.jsp" method="post" id="form1" onSubmit="return false">
+        <form action="./adminNoticeUpdate.jsp" method="post" id="form1" onSubmit="return false" enctype="multipart/form-data">
         	<input type="hidden" name="num" value="<%= num %>">
 	        <div class="card-write">
 	            <div class="myinfo">
@@ -76,7 +80,8 @@
 	            </div>
 	            <div class="msg">
 	                내용<textarea placeholder="내용을 입력하세요." name="content" id="content"><%= content %></textarea>
-	                <input type="file" name="filecontent" id="">
+	                <div><div>1. <input type="file" name="filecontent1" id="filecontent1"></div><div>등록된 첨부파일1 -> <a href="./upload-files/<%= fileName1 %>"><%= fileName1 %></a></div></div>
+	                <div><div>2. <input type="file" name="filecontent2" id="filecontent2"></div><div>등록된 첨부파일2 -> <%= fileName2 %></div></div>
 	            </div>
 	        </div>
 	        <div class="btn-w">
