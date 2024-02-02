@@ -17,6 +17,14 @@
 </head>
 <body>
 <%
+	// request, session, application -> 웹서버 생명주기 scope
+	// [로그아웃] : 값을 주고 싶지 않다면, null 값을 줄 것
+	// session.setAttribute("name", "null");
+	session.setAttribute("name", "홍길동");
+	session.setAttribute("hp", "010-1234-1234");
+	
+	//application.setAttribute("name-id", "홍길동");
+	
 	String searchText = request.getParameter("search");
 	if (searchText == null) {
 		searchText = "";

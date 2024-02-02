@@ -1,5 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%
+	// System.out.println("session-name: " + session.getAttribute("name"));
+%>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -18,7 +21,7 @@
         <form action="./adminNoticeInsert.jsp" method="post" id="form1" onSubmit="return false" enctype="multipart/form-data">
 	        <div class="card-write">
 	            <div class="myinfo">
-	                이름<input type="text" id="korname" name="korname" placeholder="이름을 입력하세요.">
+	                이름<input type="text" id="korname" name="korname" placeholder="이름을 입력하세요." value="<%= session.getAttribute("name") %>">
 	                <!-- 
 	                비밀번호<input type="password" placeholder="비밀번호를 입력하세요.">
 	                -->
