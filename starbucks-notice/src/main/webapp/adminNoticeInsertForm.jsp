@@ -34,7 +34,7 @@
 	                <div><div>1. <input type="file" name="filecontent1" id="filecontent1"></div></div>
 	                <div><div>2. <input type="file" name="filecontent2" id="filecontent2"></div>
 	            </div>
-	        </div>
+	        </div>rmfjg
 	        <div class="btn-w">
 	        	<input type="submit" value="작성" class="input-btn-w" onClick="javascript: prevCheckTextBox();" />
         	</div>
